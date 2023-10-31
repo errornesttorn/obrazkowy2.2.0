@@ -162,6 +162,7 @@ def is_difference_greater_than_12_hours(current_datetime, defined_datetime):
 
 # Send messages
 async def send_message(message, name, user_message, is_private):
+    global ostatia_wiadomosc
     if not "<@1103314100848697395>" in user_message: # wtedy komenda
         dane = user_message.split(" ")
         if dane[0] == "help":
